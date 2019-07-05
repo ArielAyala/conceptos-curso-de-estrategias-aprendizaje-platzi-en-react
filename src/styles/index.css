@@ -6,7 +6,15 @@ body {
 }
 
 .header-home {
-  height: 30vh;
+  height: 360px;
+  background-color: #1f4e6a;
+  color: beige;
+  display: block;
+  text-align: center;
+}
+
+.header-contenido {
+  height: 70px;
   background-color: #1f4e6a;
   color: beige;
   display: block;

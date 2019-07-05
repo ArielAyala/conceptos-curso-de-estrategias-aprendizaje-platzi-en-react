@@ -23,7 +23,7 @@ class Home extends Component {
         <div className="container-datos-home">
           <div className="card datos-home">
             <div className="card-header">
-              <b>Datos generales</b>
+              <h4>Datos generales</h4>
             </div>
             <div className="card-body">
               {/* <blockquote className="blockquote mb-0">
