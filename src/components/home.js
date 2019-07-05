@@ -21,7 +21,7 @@ class Home extends Component {
         <br />
 
         <div className="container-datos-home">
-          <div className="card datos-home">
+          <div className="card datos-home shadow p-3 mb-5 bg-white rounded">
             <div className="card-header">
               <h4>Datos generales</h4>
             </div>
