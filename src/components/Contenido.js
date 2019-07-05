@@ -5,10 +5,9 @@ class Contenido extends Component {
     return (
       <div className="container-fluid px-0">
         <div className="header-contenido container-fluid header border">
-          <div>
-            <h3>Pagina principal</h3>
-            
-          </div>
+          <h2 className="text-right">
+            Estrategias para aprendizaje en linea efectivamente
+          </h2>
         </div>
 
         <div className="container contenido border">

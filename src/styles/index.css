@@ -17,8 +17,9 @@ body {
   height: 70px;
   background-color: #1f4e6a;
   color: beige;
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .container-datos-home {
