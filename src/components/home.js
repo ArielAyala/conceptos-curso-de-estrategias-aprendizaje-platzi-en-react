@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
@@ -67,14 +68,12 @@ class Home extends Component {
         <div className="container-datos-home">
           <br />
           <br />
-          <a
-            href="#"
+          <Link
+            to="/Contenido"
             className="btn text-white btn-lg active mt-5 bg-info"
-            role="button"
-            aria-pressed="true"
           >
             Ir al material
-          </a>
+          </Link>
         </div>
       </div>
     );
