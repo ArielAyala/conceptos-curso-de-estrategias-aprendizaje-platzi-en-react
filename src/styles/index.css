@@ -35,11 +35,12 @@ body {
 }
 
 .container-menu {
-  width: 200px;
+  width: 310px;
 }
 
 .contenido {
   margin-top: 25px;
+  padding: 0;
 }
 
 .titulo-centrado {

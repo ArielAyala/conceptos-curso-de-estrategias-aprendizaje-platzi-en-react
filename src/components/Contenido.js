@@ -13,12 +13,13 @@ class Contenido extends Component {
         <div className="container contenido border">
           <h3 className="titulo-centrado">Titulo de item</h3>
           <div className="container-menu">
+            <h4 className="ml-3" >Contenido</h4>
             <div id="list-example" className="list-group">
               <a
                 className="list-group-item list-group-item-action"
                 href="#list-item-1"
               >
-                Item 1
+                ¿Qué es el aprendizaje?
               </a>
               <a
                 className="list-group-item list-group-item-action"
