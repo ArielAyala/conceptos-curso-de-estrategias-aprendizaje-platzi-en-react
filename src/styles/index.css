@@ -33,3 +33,15 @@ body {
   border-radius: 3px;
   width: 800px;
 }
+
+.container-menu {
+  width: 200px;
+}
+
+.contenido {
+  margin-top: 25px;
+}
+
+.titulo-centrado {
+  text-align: center;
+}
