@@ -66,11 +66,9 @@ class Home extends Component {
           </div>
         </div>
         <div className="container-datos-home">
-          <br />
-          <br />
           <Link
             to="/Contenido"
-            className="btn text-white btn-lg active mt-5 bg-info"
+            className="btn text-white btn-lg active mt-3 bg-info mb-3"
           >
             Ir al material
           </Link>
