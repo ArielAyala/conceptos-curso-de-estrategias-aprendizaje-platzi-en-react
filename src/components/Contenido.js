@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Menu from './Menu'
 
 class Contenido extends Component {
   render() {
@@ -11,36 +12,8 @@ class Contenido extends Component {
         </div>
 
         <div className="container contenido border">
-          <h3 className="titulo-centrado">Titulo de item</h3>
-          <div className="container-menu">
-            <h4 className="ml-3" >Contenido</h4>
-            <div id="list-example" className="list-group">
-              <a
-                className="list-group-item list-group-item-action"
-                href="#list-item-1"
-              >
-                ¿Qué es el aprendizaje?
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                href="#list-item-2"
-              >
-                Item 2
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                href="#list-item-3"
-              >
-                Item 3
-              </a>
-              <a
-                className="list-group-item list-group-item-action"
-                href="#list-item-4"
-              >
-                Item 4
-              </a>
-            </div>
-          </div>
+          <h3 className="titulo-centrado">¿Que es el aprendizaje?</h3>
+         <Menu />
         </div>
       </div>
     );
