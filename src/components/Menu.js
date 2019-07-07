@@ -1,6 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
 
-const Menu = (props) => {
+const Menu = props => {
   return (
     <div className="container-menu">
       <h4 className="ml-3">Contenido</h4>
@@ -34,4 +35,8 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+const mapStateToProps = reducers => {
+  return reducers.titulos;
+};
+
+export default connect(mapStateToProps)(Menu);
