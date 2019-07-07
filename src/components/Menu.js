@@ -1,40 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as menuActions from "../actions/menuActions";
+import { Link } from "react-router-dom";
 
-const Menu = props => {
-  return (
-    <div className="container-menu">
-      <h4 className="ml-3">Contenido</h4>
-      <div className="list-group">
-        <a
-          className="list-group-item list-group-item-action"
-          href="#list-item-1"
-        >
-          ¿Qué es el aprendizaje?
-        </a>
-        <a
-          className="list-group-item list-group-item-action"
-          href="#list-item-2"
-        >
-          Item 2
-        </a>
-        <a
-          className="list-group-item list-group-item-action"
-          href="#list-item-3"
-        >
-          Item 3
-        </a>
-        <a
-          className="list-group-item list-group-item-action"
-          href="#list-item-4"
-        >
-          Item 4
-        </a>
+class Menu extends Component {
+  componentDidMount() {
+    if (!this.props.titulos.length) {
+      this.props.traerTitulos();
+    }
+  }
+
+  render() {
+    return (
+      <div className="container-menu">
+        <h4 className="ml-3">Contenido</h4>
+        <div className="list-group">
+          {this.props.titulos.map((titulo, key) => (
+            <Link
+              className="list-group-item list-group-item-action"
+              to="/prueba"
+            >
+              titulo
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 const mapStateToProps = reducers => {
   return reducers.titulos;
