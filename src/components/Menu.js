@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import * as menuActions from "../actions/menuActions";
 
 const Menu = props => {
   return (
@@ -39,4 +40,7 @@ const mapStateToProps = reducers => {
   return reducers.titulos;
 };
 
-export default connect(mapStateToProps)(Menu);
+export default connect(
+  mapStateToProps,
+  menuActions
+)(Menu);
