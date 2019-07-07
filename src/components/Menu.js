@@ -15,20 +15,13 @@ class Menu extends Component {
       <div className="container-menu">
         <h4 className="ml-3">Contenido</h4>
         <div className="list-group">
-          {/* {this.props.titulos.map((titulo) => (
-                <Link
-                  className="list-group-item list-group-item-action"
-                  to="/prueba"
-                >
-                  titulo
-                </Link>
-              ))} */}
-          {this.props.titulos.forEach(titulo => (
+          {this.props.titulos.map((titulo, indice) => (
             <Link
+              key={indice}
               className="list-group-item list-group-item-action"
               to="/prueba"
             >
-              titulo
+              {titulo}
             </Link>
           ))}
         </div>
