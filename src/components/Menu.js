@@ -10,6 +10,10 @@ class Menu extends Component {
     }
   }
 
+  agregarGuionesATitulos(tituloConEspacios) {
+    return tituloConEspacios.replace(/\s+/g, "-");
+  }
+
   render() {
     return (
       <div className="container-menu">
@@ -19,7 +23,7 @@ class Menu extends Component {
             <Link
               key={indice}
               className="list-group-item list-group-item-action"
-              to="/prueba"
+              to={this.agregarGuionesATitulos(titulo)}
             >
               {titulo}
             </Link>
