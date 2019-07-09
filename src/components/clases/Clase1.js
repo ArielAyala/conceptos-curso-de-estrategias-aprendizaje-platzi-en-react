@@ -9,6 +9,12 @@ const Clase1 = () => (
     <p>
       <b>Aprender</b> significa apoderarse de algo.
     </p>
+    <br />
+    <p>
+      La <b>Psicología</b>, <b>Pedagogía</b> y <b>Neurociencias</b> son estas
+      ciencias que se encargan de estudiar cómo funcionan los procesos de
+      aprendizaje.
+    </p>
   </div>
 );
 
