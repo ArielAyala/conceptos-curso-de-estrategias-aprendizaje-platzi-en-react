@@ -16,7 +16,7 @@ class Contenido extends Component {
           <div>
             <h3 className="titulo-centrado">¿Que es el aprendizaje?</h3>
           </div>
-          <div>
+          <div className="container-central">
             <Menu />
             <ContenidoClase />
           </div>

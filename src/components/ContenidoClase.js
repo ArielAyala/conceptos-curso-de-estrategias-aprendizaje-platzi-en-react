@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 //Clases
 import Clase1 from "./clases/Clase1";
@@ -6,9 +6,9 @@ import Clase1 from "./clases/Clase1";
 class ContenidoClase extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <Clase1 />
-      </div>
+      </Fragment>
     );
   }
 }

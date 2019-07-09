@@ -2,7 +2,7 @@ import React from "react";
 
 /*Que es el aprendizaje*/
 const Clase1 = () => (
-  <div>
+  <div className="clase">
     <p>
       <b>Aprender</b> es la capacidad de adquirir conocimiento.
     </p>

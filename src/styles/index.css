@@ -47,3 +47,15 @@ body {
 .titulo-centrado {
   text-align: center;
 }
+
+.container-central {
+  display: flex;
+}
+
+.clase {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:20px;
+  padding-left: 20px;
+  width: 100%;
+}
