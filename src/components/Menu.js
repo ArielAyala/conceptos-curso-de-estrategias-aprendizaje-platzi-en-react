@@ -32,7 +32,7 @@ class Menu extends Component {
       </div>
     );
   }
-}
+} 
 
 const mapStateToProps = reducers => {
   return reducers.titulos;

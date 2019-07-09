@@ -1,7 +1,7 @@
 import { OBTENER_CLASE } from "../types/clases";
 
 const INITIAL_STATE = {
-  clase_actual: "¿Qué es el aprendizaje?"
+  claseActual: "¿Qué es el aprendizaje?"
 };
 
 export default (state = INITIAL_STATE, action) => {
