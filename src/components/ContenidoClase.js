@@ -7,7 +7,7 @@ import Clase2 from "./clases/Clase2";
 
 class ContenidoClase extends Component {
   render() {
-    //console.log(this.props);
+    console.log(this.props);
     return (
       <Fragment>
         <Clase1 />
@@ -18,7 +18,7 @@ class ContenidoClase extends Component {
 }
 
 const mapStateToProps = state => {
-  return { claseActual: state.claseActual };
+  return state;
 };
 
 export default connect(mapStateToProps)(ContenidoClase);
