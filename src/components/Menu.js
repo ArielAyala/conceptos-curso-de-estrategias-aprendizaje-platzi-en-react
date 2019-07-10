@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as menuActions from "../actions/menuActions";
+import * as clasesActions from "../actions/clasesActions";
 import { Link } from "react-router-dom";
+
+const { traerTitulos } = menuActions;
+const { obtenerTituloActual } = clasesActions;
 
 class Menu extends Component {
   componentDidMount() {
@@ -14,13 +18,20 @@ class Menu extends Component {
     return tituloConEspacios.replace(/\s+/g, "-");
   }
 
+  actualizarClase(event) {
+    console.log(event.target.text);
+    this.props.obtenerTituloActual(event.target.text);
+  }
+
   render() {
+    //console.log(this.props)
     return (
       <div className="container-menu">
         <h4 className="ml-3">Contenido</h4>
         <div className="list-group">
           {this.props.titulos.map((titulo, indice) => (
             <Link
+              onClick={this.actualizarClase}
               key={indice}
               className="list-group-item list-group-item-action"
               to={this.agregarGuionesATitulos(titulo)}
@@ -32,13 +43,18 @@ class Menu extends Component {
       </div>
     );
   }
-} 
+}
 
 const mapStateToProps = reducers => {
   return reducers.titulos;
 };
 
+const mapDispatchToProps = {
+  traerTitulos,
+  obtenerTituloActual
+};
+
 export default connect(
   mapStateToProps,
-  menuActions
+  mapDispatchToProps
 )(Menu);
