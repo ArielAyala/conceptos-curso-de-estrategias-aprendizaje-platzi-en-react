@@ -18,23 +18,25 @@ class Menu extends Component {
     return tituloConEspacios.replace(/\s+/g, "-");
   }
 
-  actualizarClase(event) {
-    console.log(event.target.text);
-    this.props.obtenerTituloActual(event.target.text);
-  }
+  actualizarClase = event => {
+    //event.preventDefault(); // Let's stop this event.
+    //event.stopPropagation(); // Really this time.
+    const textoMenu = event.target.text;
+    this.props.obtenerTituloActual(textoMenu);
+  };
 
   render() {
-    //console.log(this.props)
     return (
       <div className="container-menu">
         <h4 className="ml-3">Contenido</h4>
         <div className="list-group">
-          {this.props.titulos.map((titulo, indice) => (
+          {this.props.titulos.titulos.map((titulo, indice) => (
             <Link
               onClick={this.actualizarClase}
               key={indice}
               className="list-group-item list-group-item-action"
-              to={this.agregarGuionesATitulos(titulo)}
+              //to={this.agregarGuionesATitulos(titulo)}
+              to="#"
             >
               {titulo}
             </Link>
@@ -45,13 +47,13 @@ class Menu extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
-  return reducers.titulos;
+const mapStateToProps = state => {
+  return { titulos: state.titulos, claseActual: state.clases };
 };
 
 const mapDispatchToProps = {
-  traerTitulos,
-  obtenerTituloActual
+  obtenerTituloActual,
+  traerTitulos
 };
 
 export default connect(

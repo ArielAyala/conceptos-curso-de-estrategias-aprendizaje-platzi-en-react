@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case OBTENER_CLASE:
-      return { ...state, clase_actual: action.payload };
+      return { ...state, claseActual: action.payload };
     default:
       return state;
   }
