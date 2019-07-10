@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Menu from "./Menu";
 import ContenidoClase from "./ContenidoClase";
+import { connect } from "react-redux";
 
 class Contenido extends Component {
   render() {
@@ -14,7 +15,7 @@ class Contenido extends Component {
 
         <div className="container contenido border">
           <div>
-            <h3 className="titulo-centrado">¿Que es el aprendizaje?</h3>
+            <h3 className="titulo-centrado">{this.props.clases.claseActual}</h3>
           </div>
           <div className="container-central">
             <Menu />
@@ -26,4 +27,8 @@ class Contenido extends Component {
   }
 }
 
-export default Contenido;
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(mapStateToProps)(Contenido);
