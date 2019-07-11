@@ -6,19 +6,27 @@ import Clase1 from "./clases/Clase1";
 import Clase2 from "./clases/Clase2";
 
 class ContenidoClase extends Component {
+  mostrarClase = () => {
+    switch (this.props.claseActual) {
+      case "¿Qué es el aprendizaje?":
+        return <Clase1 />;
+        break;
+      case "Tipos de pensamiento":
+        return <Clase2 />;
+        break;
+
+      default:
+        return;
+    }
+  };
+
   render() {
-   // console.log(this.props);
-    return (
-      <Fragment>
-        <Clase1 />
-        <Clase2 />
-      </Fragment>
-    );
+    return <Fragment>{this.mostrarClase()}</Fragment>;
   }
 }
 
 const mapStateToProps = state => {
-  return state;
+  return { claseActual: state.clases.claseActual };
 };
 
 export default connect(mapStateToProps)(ContenidoClase);
