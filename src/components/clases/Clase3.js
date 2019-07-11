@@ -1,6 +1,6 @@
 import React from "react";
 
-/*Que es el aprendizaje*/
+//Etapas del aprendizaje
 const Clase3 = () => (
   <div className="clase">
     <p>

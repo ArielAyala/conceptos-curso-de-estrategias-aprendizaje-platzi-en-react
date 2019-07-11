@@ -1,6 +1,6 @@
 import React from "react";
 
-/*Que es el aprendizaje*/
+//Tipos de estudiantes
 const Clase4 = () => (
   <div className="clase">
     <p>
