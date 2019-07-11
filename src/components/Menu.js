@@ -29,7 +29,7 @@ class Menu extends Component {
     return (
       <div className="container-menu">
         <h4 className="ml-3">Contenido</h4>
-        <div className="list-group">
+        <div className="list-group container-opciones">
           {this.props.titulos.titulos.map((titulo, indice) => (
             <Link
               onClick={this.actualizarClase}
