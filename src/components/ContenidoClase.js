@@ -8,6 +8,7 @@ import Clase3 from "./clases/Clase3";
 import Clase4 from "./clases/Clase4";
 import Clase5 from "./clases/Clase5";
 import Clase6 from "./clases/Clase6";
+import Clase7 from "./clases/Clase7";
 
 class ContenidoClase extends Component {
   mostrarClase = () => {
@@ -23,7 +24,9 @@ class ContenidoClase extends Component {
       case "Reglas de aprendizaje efectivo":
         return <Clase5 />;
       case "La atención y lo que no sabía de la técnica pomodoro":
-        return <Clase6 />
+        return <Clase6 />;
+      case "Cómo puedo sacar el máximo provecho a mi memoria":
+        return <Clase7 />;
       default:
         return;
     }
