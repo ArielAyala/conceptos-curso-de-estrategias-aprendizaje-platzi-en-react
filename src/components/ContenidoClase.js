@@ -10,6 +10,7 @@ import Clase5 from "./clases/Clase5";
 import Clase6 from "./clases/Clase6";
 import Clase7 from "./clases/Clase7";
 import Clase8 from "./clases/Clase8";
+import Clase9 from "./clases/Clase9";
 
 class ContenidoClase extends Component {
   mostrarClase = () => {
@@ -30,6 +31,8 @@ class ContenidoClase extends Component {
         return <Clase7 />;
       case "Consejos para memorizar mejor":
         return <Clase8 />;
+      case "Chunking como estrategia de aprendizaje individual":
+        return <Clase9 />;
       default:
         return;
     }
