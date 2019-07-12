@@ -13,7 +13,7 @@ class Contenido extends Component {
           </h3>
         </div>
 
-        <div className="container contenido border">
+        <div className="container contenido border-right">
           <div>
             <h3 className="titulo-centrado">{this.props.clases.claseActual}</h3>
           </div>

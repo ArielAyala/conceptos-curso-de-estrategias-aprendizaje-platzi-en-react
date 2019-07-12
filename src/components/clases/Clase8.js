@@ -2,7 +2,7 @@ import React from "react";
 
 //Consejos para memorizar mejor
 const Clase8 = () => (
-  <div className="Consejos para memorizar mejor">
+  <div className="clase">
     <p>
       <b>Antes de dormir:</b> Recapitula lo que aprendiste durante el día. Puede
       ser en una libreta, smartphone o en tu cabeza. Recuerda que nunca debes
