@@ -7,10 +7,10 @@ class Contenido extends Component {
   render() {
     return (
       <div className="container-fluid px-0">
-        <div className="header-contenido container-fluid header border">
-          <h2 className="text-right">
+        <div className="header-contenido container-fluid header border align-items-center">
+          <h3 className="text-right mb-0">
             Estrategias para aprendizaje en linea efectivamente
-          </h2>
+          </h3>
         </div>
 
         <div className="container contenido border">
