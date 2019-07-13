@@ -13,6 +13,7 @@ import Clase8 from "./clases/Clase8";
 import Clase9 from "./clases/Clase9";
 import Clase10 from "./clases/Clase10";
 import Clase11 from "./clases/Clase11";
+import Clase12 from "./clases/Clase12";
 
 class ContenidoClase extends Component {
   mostrarClase = () => {
@@ -39,6 +40,8 @@ class ContenidoClase extends Component {
         return <Clase10 />;
       case "Las notas de Cornell":
         return <Clase11 />;
+      case "Cómo incrementar mi velocidad de lectura":
+        return <Clase12 />;
       default:
         return;
     }
