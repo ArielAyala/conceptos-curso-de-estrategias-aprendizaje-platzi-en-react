@@ -42,7 +42,7 @@ const Clase7 = () => (
         </div>
       </div>
     </div>
-
+    <br />
     <p>
       <b>Correlaciones mnemotécnicas:</b> Hacer conexiones de lo aprendido con
       asuntos cotidianos.
