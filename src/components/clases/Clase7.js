@@ -2,7 +2,7 @@ import React from "react";
 
 //Cómo puedo sacar el máximo provecho a mi memoria
 const Clase7 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <p>
       La <b>memoria</b> es la capacidad de recordad algo.
     </p>

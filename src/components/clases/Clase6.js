@@ -2,7 +2,7 @@ import React from "react";
 
 //La atención y lo que no sabías de la técnica pomodoro
 const Clase6 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <p>
       La <b>atención</b> es un proceso cognitivo que nos permite enfocarnos en
       una cosa en específico. Un <b>proceso cognitivo</b> será todo aquel que

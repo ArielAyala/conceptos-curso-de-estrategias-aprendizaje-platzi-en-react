@@ -2,7 +2,7 @@ import React from "react";
 
 /*Tipos de pensamiento*/
 const Clase2 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <p>
       La <b>neurociencia</b> es el campo de la ciencia que se encarga de
       estudiar el sistema nervioso.

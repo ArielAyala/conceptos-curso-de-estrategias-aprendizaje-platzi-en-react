@@ -2,7 +2,7 @@ import React from "react";
 
 //Tipos de estudiantes
 const Clase4 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <p>
       <b>Alumnos activos:</b> Son entusiastas y les apasiona las cosas nuevas.
       Son este tipo de alumnos que actúa antes de pensar. Por lo general,

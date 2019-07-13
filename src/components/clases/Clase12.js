@@ -2,7 +2,7 @@ import React from "react";
 
 //Cómo incrementar mi velocidad de lectura
 const Clase12 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <ol>
       <li>
         <b>Reduce los movimientos sacádicos</b>

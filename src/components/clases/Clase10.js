@@ -2,7 +2,7 @@ import React from "react";
 
 //Hacer apuntes mejora mi proceso de aprendizaje
 const Clase10 = () => (
-  <div className="clase">
+  <div className="clase text-justify">
     <p>
       Los <b>apuntes</b> pueden ser la columna vertebral del conocimiento, son
       una forma de organizar y estructurar la información de tal manera que
