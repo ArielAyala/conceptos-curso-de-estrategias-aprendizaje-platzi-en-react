@@ -25,11 +25,24 @@ const Clase7 = () => (
     <p>
       Una técnica que puedes seguir para reducir este porcentaje a un 10% es:
     </p>
-    <ul>
-      <li>Repasa un concepto 24 horas después (70%)</li>
-      <li>Repasa el concepto 1 semana después (50%)</li>
-      <li>Repasa el concepto 1 mes después (10%)</li>
-    </ul>
+    <div className="container">
+      <div className="row">
+        <div className="col-7">
+          <ul className="list-group">
+            <li className="list-group-item">
+              Repasa un concepto 24 horas después (70%)
+            </li>
+            <li className="list-group-item">
+              Repasa el concepto 1 semana después (50%)
+            </li>
+            <li className="list-group-item">
+              Repasa el concepto 1 mes después (10%)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <p>
       <b>Correlaciones mnemotécnicas:</b> Hacer conexiones de lo aprendido con
       asuntos cotidianos.
