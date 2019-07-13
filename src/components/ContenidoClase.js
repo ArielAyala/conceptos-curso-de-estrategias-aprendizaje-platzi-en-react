@@ -16,6 +16,7 @@ import Clase11 from "./clases/Clase11";
 import Clase12 from "./clases/Clase12";
 import Clase13 from "./clases/Clase13";
 import Clase14 from "./clases/Clase14";
+import Clase15 from "./clases/Clase15";
 
 class ContenidoClase extends Component {
   mostrarClase = () => {
@@ -48,6 +49,8 @@ class ContenidoClase extends Component {
         return <Clase13 />;
       case "Profesor por un día":
         return <Clase14 />;
+      case "Evaluar mi conocimiento":
+        return <Clase15 />;
       default:
         return;
     }
