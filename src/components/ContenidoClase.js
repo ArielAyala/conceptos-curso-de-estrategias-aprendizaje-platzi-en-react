@@ -19,6 +19,7 @@ import Clase14 from "./clases/Clase14";
 import Clase15 from "./clases/Clase15";
 import Clase16 from "./clases/Clase16";
 import Clase17 from "./clases/Clase17";
+import Clase18 from "./clases/Clase18";
 
 class ContenidoClase extends Component {
   mostrarClase = () => {
@@ -57,6 +58,8 @@ class ContenidoClase extends Component {
         return <Clase16 />;
       case "Metacognición para la larga vida del aprendizaje":
         return <Clase17 />;
+      case "Hábitos para un aprendizaje efectivo":
+        return <Clase18 />;
       default:
         return;
     }

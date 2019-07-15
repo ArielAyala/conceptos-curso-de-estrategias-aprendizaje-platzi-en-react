@@ -31,7 +31,7 @@ class Home extends Component {
                 <p>Autor: Ariel Ayala</p>
               </blockquote> */}
               <p>
-                Autor:{" "}
+                Autor del sitio:{" "}
                 <a href="https://github.com/ArielAyala" target="_blank">
                   Ariel Ayala
                 </a>
